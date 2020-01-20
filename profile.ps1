@@ -11,6 +11,7 @@
 
 # Authenticate with Azure PowerShell using MSI.
 # Remove this if you are not planning on using MSI or Azure PowerShell.
+#Connect-AzAccount
 if ($env:MSI_SECRET -and (Get-Module -ListAvailable Az.Accounts)) {
     Connect-AzAccount -Identity
 }
